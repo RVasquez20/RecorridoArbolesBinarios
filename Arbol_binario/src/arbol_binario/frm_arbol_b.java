@@ -247,7 +247,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
 
       DefaultMutableTreeNode nodoRaiz = (DefaultMutableTreeNode) j_arbol.getModel().getRoot();
 
-      txtConsola.setText(txtConsola.getText() + "Recorrido PREORDEN: ");
+      txtConsola.setText(txtConsola.getText() + "Recorrido PREORDER: ");
 
 
 
@@ -277,7 +277,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
 
       DefaultMutableTreeNode nodoRaiz = (DefaultMutableTreeNode) j_arbol.getModel().getRoot();
 
-      txtConsola.setText(txtConsola.getText() + "Recorrido INORDEN: ");
+      txtConsola.setText(txtConsola.getText() + "Recorrido INORDER: ");
       
       strRecorrido = "";
       
@@ -304,7 +304,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
 
       DefaultMutableTreeNode nodoRaiz = (DefaultMutableTreeNode) j_arbol.getModel().getRoot();
 
-      txtConsola.setText(txtConsola.getText() + "Recorrido POSTORDEN: ");
+      txtConsola.setText(txtConsola.getText() + "Recorrido POSTORDER: ");
       
       strRecorrido = "";
       
