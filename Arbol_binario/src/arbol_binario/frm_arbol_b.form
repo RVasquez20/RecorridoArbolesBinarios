@@ -51,9 +51,9 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="btn_PostOrden" max="32767" attributes="0"/>
-                                  <Component id="btn_InOrden" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="btn_Preorden" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btn_PostOrder" max="32767" attributes="0"/>
+                                  <Component id="btn_InOrder" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btn_Preorder" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -74,11 +74,11 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnLimpiarArbol" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btn_Preorden" min="-2" max="-2" attributes="0"/>
+              <Component id="btn_Preorder" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btn_InOrden" min="-2" max="-2" attributes="0"/>
+              <Component id="btn_InOrder" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Component id="btn_PostOrden" min="-2" max="-2" attributes="0"/>
+              <Component id="btn_PostOrder" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane2" min="-2" pref="250" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
@@ -136,28 +136,28 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarArbolActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_Preorden">
+    <Component class="javax.swing.JButton" name="btn_Preorder">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Preorden"/>
+        <Property name="text" type="java.lang.String" value="Preorder"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_PreordenActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_PreorderActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_InOrden">
+    <Component class="javax.swing.JButton" name="btn_InOrder">
       <Properties>
-        <Property name="text" type="java.lang.String" value="InOrden"/>
+        <Property name="text" type="java.lang.String" value="InOrder"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_InOrdenActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_InOrderActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_PostOrden">
+    <Component class="javax.swing.JButton" name="btn_PostOrder">
       <Properties>
-        <Property name="text" type="java.lang.String" value="PostOrden"/>
+        <Property name="text" type="java.lang.String" value="PostOrder"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_PostOrdenActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_PostOrderActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

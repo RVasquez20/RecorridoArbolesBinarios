@@ -42,9 +42,9 @@ public class frm_arbol_b extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         txtConsola = new javax.swing.JTextArea();
         btnLimpiarArbol = new javax.swing.JButton();
-        btn_Preorden = new javax.swing.JButton();
-        btn_InOrden = new javax.swing.JButton();
-        btn_PostOrden = new javax.swing.JButton();
+        btn_Preorder = new javax.swing.JButton();
+        btn_InOrder = new javax.swing.JButton();
+        btn_PostOrder = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,24 +68,24 @@ public class frm_arbol_b extends javax.swing.JFrame {
             }
         });
 
-        btn_Preorden.setText("Preorden");
-        btn_Preorden.addActionListener(new java.awt.event.ActionListener() {
+        btn_Preorder.setText("Preorder");
+        btn_Preorder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_PreordenActionPerformed(evt);
+                btn_PreorderActionPerformed(evt);
             }
         });
 
-        btn_InOrden.setText("InOrden");
-        btn_InOrden.addActionListener(new java.awt.event.ActionListener() {
+        btn_InOrder.setText("InOrder");
+        btn_InOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_InOrdenActionPerformed(evt);
+                btn_InOrderActionPerformed(evt);
             }
         });
 
-        btn_PostOrden.setText("PostOrden");
-        btn_PostOrden.addActionListener(new java.awt.event.ActionListener() {
+        btn_PostOrder.setText("PostOrder");
+        btn_PostOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_PostOrdenActionPerformed(evt);
+                btn_PostOrderActionPerformed(evt);
             }
         });
 
@@ -116,9 +116,9 @@ public class frm_arbol_b extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(98, 98, 98)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(btn_PostOrden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn_InOrden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn_Preorden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(btn_PostOrder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn_InOrder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btn_Preorder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -131,11 +131,11 @@ public class frm_arbol_b extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnLimpiarArbol)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_Preorden)
+                .addComponent(btn_Preorder)
                 .addGap(18, 18, 18)
-                .addComponent(btn_InOrden)
+                .addComponent(btn_InOrder)
                 .addGap(22, 22, 22)
-                .addComponent(btn_PostOrden)
+                .addComponent(btn_PostOrder)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 14, Short.MAX_VALUE))
@@ -235,7 +235,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnLimpiarArbolActionPerformed
 
-    private void btn_PreordenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_PreordenActionPerformed
+    private void btn_PreorderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_PreorderActionPerformed
         
     try{
 
@@ -253,7 +253,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
 
       strRecorrido = "";
 
-      RecorridoPreorden(nodoRaiz);
+      RecorridoPreorder(nodoRaiz);
 
       txtConsola.setText(txtConsola.getText() + strRecorrido.substring(0, strRecorrido.length() - 3) + "." + System.lineSeparator());
 
@@ -264,9 +264,9 @@ public class frm_arbol_b extends javax.swing.JFrame {
       txtConsola.setText(txtConsola.getText() + "Error en btnPreordenActionPerformed(): " + ex.getMessage() + System.lineSeparator());
 
     }
-    }//GEN-LAST:event_btn_PreordenActionPerformed
+    }//GEN-LAST:event_btn_PreorderActionPerformed
 
-    private void btn_InOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_InOrdenActionPerformed
+    private void btn_InOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_InOrderActionPerformed
         try{
 
       if(j_arbol.getModel().getRoot() == null)
@@ -291,9 +291,9 @@ public class frm_arbol_b extends javax.swing.JFrame {
       txtConsola.setText(txtConsola.getText() + "Error en btnPreordenActionPerformed(): " + ex.getMessage() + System.lineSeparator());
 
     }
-    }//GEN-LAST:event_btn_InOrdenActionPerformed
+    }//GEN-LAST:event_btn_InOrderActionPerformed
 
-    private void btn_PostOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_PostOrdenActionPerformed
+    private void btn_PostOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_PostOrderActionPerformed
          try{
 
       if(j_arbol.getModel().getRoot() == null)
@@ -318,7 +318,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
       txtConsola.setText(txtConsola.getText() + "Error en btnPreordenActionPerformed(): " + ex.getMessage() + System.lineSeparator());
 
     }
-    }//GEN-LAST:event_btn_PostOrdenActionPerformed
+    }//GEN-LAST:event_btn_PostOrderActionPerformed
 
     
     /**
@@ -358,9 +358,9 @@ public class frm_arbol_b extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLimpiarArbol;
-    private javax.swing.JButton btn_InOrden;
-    private javax.swing.JButton btn_PostOrden;
-    private javax.swing.JButton btn_Preorden;
+    private javax.swing.JButton btn_InOrder;
+    private javax.swing.JButton btn_PostOrder;
+    private javax.swing.JButton btn_Preorder;
     private javax.swing.JButton btn_agregar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -370,7 +370,7 @@ public class frm_arbol_b extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
 //Metodo para Recorrido en Preornden
-    public void RecorridoPreorden(DefaultMutableTreeNode nodoRaiz)
+    public void RecorridoPreorder(DefaultMutableTreeNode nodoRaiz)
 
   {
 
@@ -380,9 +380,9 @@ public class frm_arbol_b extends javax.swing.JFrame {
 
       strRecorrido += nodoRaiz.getUserObject().toString().split("-")[1].trim() + " - ";
 
-      RecorridoPreorden((DefaultMutableTreeNode) nodoRaiz.getFirstChild());
+      RecorridoPreorder((DefaultMutableTreeNode) nodoRaiz.getFirstChild());
 
-      RecorridoPreorden((DefaultMutableTreeNode) nodoRaiz.getLastChild());
+      RecorridoPreorder((DefaultMutableTreeNode) nodoRaiz.getLastChild());
 
     }
 
